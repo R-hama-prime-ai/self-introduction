@@ -1,0 +1,269 @@
+@charset "UTF-8";
+
+
+
+html {
+  width: 100%;
+}
+
+body {
+  background-color: #f4f4f4;
+}
+
+header {
+  background-color: #333;
+  color: white;
+  height: 80px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between; /* ヘッダー内の要素を左右に配置 */
+  align-items: center;
+}
+
+header h1 {
+  margin-left: 3%;
+}
+
+header ul {
+  list-style: none;
+  display: flex;
+  gap: 40px; /* ヘッダーのリンク間にスペース */
+  margin-right: 30px;
+}
+
+header li {
+  padding: 20px 0;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+a:hover {
+  opacity: 0.7;
+}
+
+.Profile {
+  display: flex;              
+  align-items: center;       
+  justify-content: center;   
+  gap: 40px;                
+  padding: 40px 0;        
+}
+
+.Profile img {
+  width: 200px;            
+  height: auto;
+  border-radius: 10%;       
+}
+
+.label {
+  display: inline-block;
+  width: 130px;
+  font-weight: bold;
+  white-space: nowrap;
+}
+
+.information {
+  display: flex;
+  flex-direction: column;    
+  justify-content: center;
+  max-width: 600px;
+  line-height: 2.0;
+  padding: 20px;
+  width: 100%; /* 横幅を100%に */
+  text-align: left;
+}
+
+.information p {
+  margin: 5px 0;
+  font-size: 20px;
+  text-align: left;
+}
+
+.Hobby h2 {
+  text-align: center;
+}
+
+.slider {
+  position: relative;
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+  overflow: hidden;
+}
+
+.slides-container {
+  display: flex;
+  transition: transform 0.7s ease;
+  width: 500%;
+}
+
+.slide {
+  flex: 0 0 20%;
+  position: relative;
+}
+
+.slide img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.caption {
+  position: absolute;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.3); 
+  color: #fff;
+  width: 100%;
+  padding: 15px;
+  box-sizing: border-box;
+}
+
+button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.4); 
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  font-size: 24px;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+.prev {
+  left: 10px;
+}
+
+.next {
+  right: 10px;
+}
+
+.dots-container {
+  text-align: center;
+  margin-top: 15px;
+}
+
+.dot {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  margin: 0 6px;
+  background-color: #bbb;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.dot.active {
+  background-color: #333;
+}
+
+#Contact {
+  color: white;
+  text-align: center;
+  padding: 40px;
+  background-color: #333;
+}
+
+.contact-info {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.icon {
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+  transition: color 0.3s;
+}
+
+.icon i {
+  margin-right: 8px;
+  font-size: 24px;
+}
+
+.icon:hover {
+  color: #1da1f2;
+}
+
+.icon.instagram:hover {
+  color: #e1306c;
+}
+
+/* スマホ表示 */
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+    height: auto;
+    padding: 20px;
+  }
+
+  header h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+
+  header ul {
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+    text-align: left;
+  }
+
+  header li {
+    margin: 0;
+  }
+
+  .Profile {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+  }
+
+  .Profile img {
+    width: 150px;
+  }
+
+  .information {
+    padding: 10px;
+    font-size: 16px;
+    width: 100%;
+    max-width: 90%;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;  
+  }
+
+  .information p {
+    font-size: 16px;
+    text-align: left;
+    display: flex;
+    align-items: baseline;
+    gap: 10px;
+    margin: 5px 0;
+  }
+
+  .label {
+    display: inline-block;
+    min-width: 100px;
+    font-weight: bold;
+    white-space: nowrap;
+  }
+}
