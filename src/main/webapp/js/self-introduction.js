@@ -10,6 +10,8 @@ slides.forEach(slide => {
 });
 
 
+
+
 function updateSlidePosition() {
   const offset = -currentSlide * (100 / totalSlides);
   slidesContainer.style.transform = `translateX(${offset}%)`;
