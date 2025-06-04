@@ -9,8 +9,7 @@ slides.forEach(slide => {
   slide.style.width = `${100 / totalSlides}%`;
 });
 
-
-
+console.log();
 
 function updateSlidePosition() {
   const offset = -currentSlide * (100 / totalSlides);
