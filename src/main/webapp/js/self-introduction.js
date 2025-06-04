@@ -9,7 +9,9 @@ slides.forEach(slide => {
   slide.style.width = `${100 / totalSlides}%`;
 });
 
-console.log();
+console.log("test05");
+
+
 
 
 
