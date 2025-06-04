@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+	<meta charset="utf-8">
+	<title>濵　遼介自己紹介サイト</title>
+	<link rel="stylesheet" href="css/self-introduction.css">
+	<link rel="stylesheet" href="css/self-introduction.css?v=1.1">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+
+<body>
+	<header>
+		<h1>Self Introduction</h1>
+		<ul>
+			<li><a href="#Profile">Profile</a></li>
+			<li><a href="#MyHobby">MyHobby</a></li>
+			<li><a href="#Contact">Contact</a></li>
+		</ul>
+
+		<!--プロフィールセクション-->
+	</header>
+
+	<section id="Profile" class="Profile">
+		<img src="img/Me-img.jpg">
+		<div class="information">
+		  <p><span class="label"> Name:</span> 濵 遼介 （ハマ リョウスケ）</p>
+		  <p><span class="label"> Age:</span> 22</p>
+		  <p><span class="label"> Birth:</span> 2003年 3月9日</p>
+		  <p><span class="label"> Personality:</span> 真面目 負けず嫌い</p>
+		  <p><span class="label"> From:</span> 神奈川県 横浜市</p>
+		  <p><span class="label"> Graduation:</span> 神奈川大学</p>
+		  <p><span class="label"> Company:</span> 株式会社プライム・アイ</p>
+		</div>
+	</section>
+	<!--------------------------->
+	<section id="MyHobby" class="Hobby">
+		<h2>小さいころからゲームや漫画、アニメ、サッカーが大好きで、最近はゴルフも楽しんでます！</h2>
+		<div class="slider">
+			<button class="prev" onclick="prevSlide()">&#10094;</button>
+			<div class="slides-container">
+				<div class="slide">
+					<img src="img/Genshin-img.jpg" alt="原神">
+					<div class="caption">
+						<h3>ゲーム、非常に大好きでございます。</h3>
+						<p>RPGはもちろん、アクション、音楽ゲームもよくやります<br>
+							最近だと一番「原神」にハマってまして、<br>
+							新キャラが出るたびにお金が飛んで行ってます（笑）<br>
+							他のゲームだと「APEX Legends」とか「モバイルレジェンズ」<br>
+							「ヘブンバーンズレッド」とかでしょうか。<br>
+							学生時代は3度の飯よりゲームでしたね。
+						</p>
+					</div>
+				</div>
+				<div class="slide">
+					<img src="img/Manga-img.jpg" alt="漫画">
+					<div class="caption">
+						<h3>漫画いいですよね！</h3>
+						<p>キャラクターの声や心情を想像して、<br>
+							自分の理想へと昇華させるのが好きです。<br>
+							「サマータイムレンダ」「かぐや様は告らせたい」<br>
+							「ニセコイ」「エリアの騎士」「怪獣8号」などなど<br>
+							ジャンル問わず見てます！<br>
+							最近だと「ジャンケットバンク」にはまってます。
+						</p>
+					</div>
+				</div>
+				<div class="slide">
+					<img src="img/NieR-img.jpg" alt="アニメ">
+					<div class="caption">
+						<h3>日本のアニメは最高です！</h3>
+						<p>兄の影響もあって普段からアニメばっかり見てます!<br>
+							多分一般的にはアンパンマンとか<br>
+							戦隊ものから始まるんでしょうけど、<br>
+							最初からポケモンとかいってましたね。(-_-;)<br>
+							それからも自分の年齢から一個上の世代が<br>
+							見てそうなものばかり見てました。
+						</p>
+					</div>
+				</div>
+				<div class="slide">
+					<img src="img/Soccer-img.jpg" alt="サッカー">
+					<div class="caption">
+						<h3>サッカーはノリと勢いで始めました！</h3>
+						<p>幼いころ兄の付き添いでサッカークラブに顔を出していましたが、<br>
+							唐突に「コーチ！俺もサッカーやる！」<br>
+							って言ったのが始まりだったようです（笑）<br>
+							そこから上手くはならなかったですが、<br>
+							気合と根性で高校まで続けていました。<br>
+							会社のフットサルに参加できる日が待ち遠しいです！
+						</p>
+					</div>
+				</div>
+				<div class="slide">
+					<img src="img/Golf-img.jpg" alt="ゴルフ">
+					<div class="caption">
+						<h3>ゴルフ始めました！？</h3>
+						<p>父がゴルフ好きでして、よくスコアの自慢をしてきます。<br>
+							いやぁ～人が楽しくやってるものってきになりますよね～<br>
+							ついにゴルフの打ちっぱなしにつれて行ってもらったんですよ！<br>
+							最初はクラブの持ち方もぎこちなくて、ボールにも当たらなかったですが、<br>
+							だんだん飛ばせるようになってクリーンヒットした時には<br>
+							それはもう楽しくなっちゃいますよね？？？<br>
+							いつかはコースも回ってみたいものです。
+						</p>
+					</div>
+				</div>
+			</div>
+			<button class="next" onclick="nextSlide()">&#10095;</button>
+			<div class="dots-container"></div>
+		</div>
+	</section>
+
+	<section id="Contact">
+	  <h2>Contact</h2>
+	  <p>気軽に連絡してください！</p>
+	  <div class="contact-info">
+	    <a href="https://twitter.com/@Momon_zoz" target="_blank" class="icon twitter">
+	      <i class="fab fa-twitter"></i> Twitter
+	    </a>
+	    <a href="https://instagram.com/tottoko_hamu.0309" target="_blank" class="icon instagram">
+	      <i class="fab fa-instagram"></i> Instagram
+	    </a>
+	  </div>
+	</section>
+
+
+	<script src="js/self-introduction.js"></script>
+</body>
+
+</html>
